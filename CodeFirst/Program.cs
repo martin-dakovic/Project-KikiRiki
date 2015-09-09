@@ -34,6 +34,8 @@ namespace CodeFirst
     {
         public int StudentId { get; set; }
         public string Name { get; set; }
+
+        public DateTime BirthDate { get; set; }
         public virtual List<Subject> Subjects { get; set; }
 
         public Student()
@@ -45,8 +47,10 @@ namespace CodeFirst
 
     public class Subject
     {
-        public string SubjectId { get; set; }
+        public int SubjectId { get; set; }
         public string Name { get; set; }
+
+        
         public virtual Student student { get; set; }
     }
 

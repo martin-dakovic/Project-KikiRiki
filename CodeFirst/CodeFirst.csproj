@@ -52,12 +52,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201509091735308_InitialCreate.cs" />
+    <Compile Include="Migrations\201509091735308_InitialCreate.Designer.cs">
+      <DependentUpon>201509091735308_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509091818205_AddBirthday.cs" />
+    <Compile Include="Migrations\201509091818205_AddBirthday.Designer.cs">
+      <DependentUpon>201509091818205_AddBirthday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509091822450_AddBirthdayFIX.cs" />
+    <Compile Include="Migrations\201509091822450_AddBirthdayFIX.Designer.cs">
+      <DependentUpon>201509091822450_AddBirthdayFIX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201509091735308_InitialCreate.resx">
+      <DependentUpon>201509091735308_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509091818205_AddBirthday.resx">
+      <DependentUpon>201509091818205_AddBirthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509091822450_AddBirthdayFIX.resx">
+      <DependentUpon>201509091822450_AddBirthdayFIX.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
