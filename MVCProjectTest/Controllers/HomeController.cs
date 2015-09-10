@@ -13,13 +13,24 @@ namespace MVCProjectTest.Controllers
             return View();
         }
 
-        [Route("home/riki")]
+        [Route("aaa/bbb")]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            return View("About");
         }
+
+        [Route("aaa/bbb")]
+        [HttpPost]
+        public ActionResult About(string text)
+        {
+            ViewBag.Message = "And here we go " + text;
+
+            return View("About");
+        }
+
+
 
         public ActionResult Contact()
         {
